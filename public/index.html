@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular + Express Code Challenge</title>
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendors/angular/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+
+  </head>
+  <body class="container" ng-controller="MainController">
+    <header class="page-header"><h1>Angular + Express Code Challege</h1></header>
+
+    <button class="btn btn-lg btn-success" ng-click="getNames()">Display Students</button>
+    <ol>
+      <li ng-repeat="student in studentList">{{student}}</li>
+    </ol>
+
+
+  </body>
+</html>
